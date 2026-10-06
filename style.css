@@ -1,0 +1,67 @@
+body {
+    position: relative;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+div {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+
+#esquerda {
+    background-color: red;
+    animation: forwards lado1 5s ease-in-out;
+
+}
+
+#direita {
+    background-color: blue;
+    animation: forwards lado2 5s ease-in-out;
+
+}
+
+@keyframes lado1 {
+    0% {
+        transform: translateX(500px) scale(0);
+    }
+
+    25% {
+        transform: translateX(500px) scale(2);
+    }
+
+    75% {
+        opacity: 95%;
+    }
+
+    100% {
+        transform: translateX(0) scale(5);
+        opacity: 60%;
+    }
+}
+
+@keyframes lado2 {
+    0% {
+        transform: translateX(-500px) scale(0);
+    }
+
+    25% {
+        transform: translateX(-500px) scale(2);
+    }
+
+    75% {
+        opacity: 95%;
+    }
+
+    100% {
+        transform: translateX(0) scale(5);
+        opacity: 60%;
+    }
+}
